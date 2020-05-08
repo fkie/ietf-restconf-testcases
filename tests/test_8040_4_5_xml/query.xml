@@ -1,0 +1,6 @@
+<album xmlns="https://example.com/ns/example-jukebox"
+             xmlns:jbox="https://example.com/ns/example-jukebox">
+    <name>Wasting Light</name>
+    <genre>jbox:alternative</genre>
+    <year>2011</year>
+</album>

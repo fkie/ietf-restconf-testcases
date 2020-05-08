@@ -1,0 +1,10 @@
+{
+    "ietf-yang-library:modules-state" : {
+        "module" : [
+            {
+                "name" : "example-jukebox",
+                "revision" : "2016-08-15"
+            }
+        ]
+    }
+}

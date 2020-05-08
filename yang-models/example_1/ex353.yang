@@ -1,0 +1,39 @@
+module ex353 {
+
+    yang-version "1.1";
+
+    namespace "http://example.com/testb";
+
+    prefix "rfc8040";
+
+    container top {
+        list list1 {
+            key "key1 key2 key3";
+
+            leaf key1 { type string; }
+            leaf key2 { type string; }
+            leaf key3 { type string; }
+
+            leaf content { type string; }
+
+            list list2 {
+                key "key4 key5";
+                leaf key4 { type string; }
+                leaf key5 { type string; }
+
+                leaf X {
+                    config false;
+                    type string;
+                }
+            }
+        }
+        leaf-list Y {
+            type uint32;
+        }
+        leaf state {
+            type uint32;
+            config false;
+            default 1;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "example-jukebox:library": {
+        "artist-count": 42,
+        "album-count": 59,
+        "song-count": 374
+    }
+}

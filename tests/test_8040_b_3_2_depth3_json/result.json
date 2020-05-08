@@ -1,0 +1,17 @@
+{
+    "example-jukebox:jukebox" : {
+        "library" : {
+            "artist" : []
+        },
+        "playlist" : [
+            {
+                "name" : "Foo-One",
+                "description" : "example playlist 1",
+                "song" : []
+            }
+        ],
+        "player" : {
+            "gap" : "0.5"
+        }
+    }
+}

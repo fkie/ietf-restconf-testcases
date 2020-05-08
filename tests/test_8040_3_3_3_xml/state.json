@@ -1,0 +1,20 @@
+{
+    "example-jukebox:jukebox": {
+        "library": {
+            "artist": [
+                {
+                    "name": "Foo Fighters",
+                    "album": [
+                        {
+                            "name": "One by One",
+                            "year": 2012
+                        }
+                    ]
+                }
+            ],
+            "artist-count": 42,
+            "album-count": 59,
+            "song-count": 374
+        }
+    }
+}

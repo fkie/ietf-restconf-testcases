@@ -1,0 +1,14 @@
+{
+  "ietf-yang-library:modules-state": {
+    "module-set-id": "",
+    "module": [
+      {
+        "name": "ex353",
+        "revision": "",
+        "namespace": "http://example.com/testb",
+        "schema": "http://example.com/testb",
+        "conformance-type": "implement"
+      }
+    ]
+  }
+}

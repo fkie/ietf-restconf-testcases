@@ -1,0 +1,6 @@
+{
+    "ietf-restconf:restconf" : {
+        "data" : {},
+        "yang-library-version" : "2016-06-21"
+    }
+}

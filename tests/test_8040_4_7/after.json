@@ -1,0 +1,15 @@
+{
+    "example-jukebox:jukebox": {
+        "library": {
+            "artist": [
+                {
+                    "name": "Foo Fighters",
+                    "album": []
+                }
+            ],
+            "artist-count": 42,
+            "album-count": 59,
+            "song-count": 374
+        }
+    }
+}

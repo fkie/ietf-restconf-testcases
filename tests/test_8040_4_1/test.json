@@ -1,0 +1,23 @@
+{
+    "name": "RFC 8040 Section 4.1. example",
+    "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
+    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "before": "state.json",
+    "query": {
+        "operation": "OPTIONS",
+        "url": "",
+        "headers": {
+            "Accept": "application/yang-data+json"
+        },
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Accept-Patch": "application/yang-data+json",
+            "Allow": "OPTIONS, HEAD, GET, PUT, POST, DELETE, PATCH"
+        },
+        "body": null
+    },
+    "after": "state.json"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "RFC 8040 Section 4.5. xml example",
+    "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
+    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "before": "before.json",
+    "query": {
+        "operation": "PUT",
+        "url": "/data/example-jukebox:jukebox/library/artist=Foo%20Fighters/album=Wasting%20Light",
+        "headers": {
+            "Content-Type": "application/yang-data+xml"
+        },
+        "body": "query.xml"
+    },
+    "response": {
+        "status": 204,
+        "headers": {},
+        "body": null
+    },
+    "after": "after.json"
+}

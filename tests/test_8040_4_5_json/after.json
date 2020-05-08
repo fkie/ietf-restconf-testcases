@@ -1,0 +1,21 @@
+{
+    "example-jukebox:jukebox": {
+        "library": {
+            "artist": [
+                {
+                    "name": "Foo Fighters",
+                    "album": [
+                        {
+                            "name": "Wasting Light",
+                            "genre" : "example-jukebox:alternative",
+                            "year": 2011
+                        }
+                    ]
+                }
+            ],
+            "artist-count": 42,
+            "album-count": 59,
+            "song-count": 374
+        }
+    }
+}

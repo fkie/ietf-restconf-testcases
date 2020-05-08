@@ -1,0 +1,20 @@
+{
+    "ietf-yang-library:modules-state": {
+        "module-set-id": "20170126",
+        "module": [
+            {
+                "name": "unified-datastore",
+                "revision": "2020-05-08",
+                "namespace": "fkie",
+                "conformance-type": "implement"
+            },
+            {
+                "name": "ietf-restconf",
+                "revision": "2017-01-26",
+                "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf",
+                "schema": "https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-restconf%402017-01-26.yang",
+                "conformance-type": "implement"
+            }
+        ]
+    }
+}

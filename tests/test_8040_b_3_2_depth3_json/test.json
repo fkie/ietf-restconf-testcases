@@ -1,0 +1,22 @@
+{
+    "name": "RFC 8040 Section B.3.2. depth=3 json example",
+    "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
+    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "before": "state.json",
+    "query": {
+        "operation": "GET",
+        "url": "/data/example-jukebox:jukebox?depth=3",
+        "headers": {
+            "Accept": "application/yang-data+json"
+        },
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/yang-data+json"
+        },
+        "body": "result.json"
+    },
+    "after": "state.json"
+}

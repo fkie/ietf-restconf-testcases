@@ -1,0 +1,20 @@
+{
+    "name": "RFC 8040 Section 4.4. json example",
+    "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
+    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "before": "before.json",
+    "query": {
+        "operation": "POST",
+        "url": "/data",
+        "headers": {
+            "Content-Type": "application/yang-data+json"
+        },
+        "body": "query.json"
+    },
+    "response": {
+        "status": 201,
+        "headers": {},
+        "body": null
+    },
+    "after": "after.json"
+}

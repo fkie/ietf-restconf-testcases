@@ -1,0 +1,8 @@
+{
+    "example-jukebox:song" : [
+        {
+            "index" : 1,
+            "id" : "/example-jukebox:jukebox/library/artist[name='Foo Fighters']/album[name='Wasting Light']/song[name='Rope']"
+        }
+    ]
+}

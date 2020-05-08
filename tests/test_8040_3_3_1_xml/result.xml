@@ -1,0 +1,5 @@
+<library xmlns="https://example.com/ns/example-jukebox">
+    <artist-count>42</artist-count>
+    <album-count>59</album-count>
+    <song-count>374</song-count>
+</library>

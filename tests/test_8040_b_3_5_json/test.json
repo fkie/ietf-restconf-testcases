@@ -1,0 +1,21 @@
+{
+    "name": "RFC 8040 Section B.3.5. json example",
+    "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
+    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "before": "before.json",
+    "query": {
+        "operation": "POST",
+        "url": "/data/example-jukebox:jukebox/playlist=Foo-One?insert=after&point=/example-jukebox:jukebox/playlist=Foo-One/song=1",
+        "headers": {
+            "Content-Type": "application/yang-data+json"
+        },
+        "body": "query.json"
+    },
+    "response": {
+        "status": 201,
+        "headers": {
+        },
+        "body": null
+    },
+    "after": "after.json"
+}

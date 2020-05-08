@@ -1,0 +1,22 @@
+{
+    "name": "RFC 8040 Section B.1.1. xml example",
+    "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
+    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "before": "before.json",
+    "query": {
+        "operation": "GET",
+        "url": "",
+        "headers": {
+            "Accept": "application/yang-data+xml"
+        },
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/yang-data+xml"
+        },
+        "body": "response.xml"
+    },
+    "after": "after.json"
+}

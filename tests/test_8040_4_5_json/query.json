@@ -1,0 +1,9 @@
+{
+    "example-jukebox:album" : [
+        {
+            "name" : "Wasting Light",
+            "genre" : "example-jukebox:alternative",
+            "year" : 2011
+        }
+    ]
+}
