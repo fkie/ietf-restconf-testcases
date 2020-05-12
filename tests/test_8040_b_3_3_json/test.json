@@ -1,11 +1,11 @@
 {
     "name": "RFC 8040 Section B.3.3. json example",
     "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
-    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "model": "../../yang-models/rfc8040-jukebox/jukebox.json",
     "before": "state.json",
     "query": {
         "operation": "GET",
-        "url": "/data/ietf-yang-library:modules-state?fields=module(name;revision)",
+        "url": "/data?fields=ietf-yang-library:modules-state/module(name;revision)",
         "headers": {
             "Accept": "application/yang-data+json"
         },

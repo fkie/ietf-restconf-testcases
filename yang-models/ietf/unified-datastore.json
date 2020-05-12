@@ -1,13 +1,7 @@
 {
     "ietf-yang-library:modules-state": {
-        "module-set-id": "20170126",
+        "module-set-id": "",
         "module": [
-            {
-                "name": "unified-datastore",
-                "revision": "2020-05-08",
-                "namespace": "fkie",
-                "conformance-type": "implement"
-            },
             {
                 "name": "ietf-restconf",
                 "revision": "2017-01-26",

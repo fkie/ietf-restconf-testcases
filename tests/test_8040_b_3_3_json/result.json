@@ -1,10 +1,32 @@
 {
-    "ietf-yang-library:modules-state" : {
-        "module" : [
-            {
-                "name" : "example-jukebox",
-                "revision" : "2016-08-15"
-            }
-        ]
+  "ietf-restconf:data": {
+    "ietf-yang-library:modules-state": {
+      "module": [
+        {
+          "name": "ietf-restconf",
+          "revision": "2017-01-26"
+        },
+        {
+          "name": "example-jukebox",
+          "revision": "2016-08-15"
+        },
+        {
+          "name": "ietf-yang-library",
+          "revision": "2016-06-21"
+        },
+        {
+          "name": "ietf-restconf-monitoring",
+          "revision": "2017-01-26"
+        },
+        {
+          "name": "ietf-inet-types",
+          "revision": "2013-07-15"
+        },
+        {
+          "name": "ietf-yang-types",
+          "revision": "2013-07-15"
+        }
+      ]
     }
+  }
 }

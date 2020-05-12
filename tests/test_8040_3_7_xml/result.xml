@@ -1,1 +1,1 @@
-<schema xmlns="urn:ietf:params:xml:ns:yang:ietf-yang-library">http://127.0.0.1:8080/restconf/schema/example-jukebox.yang</schema>
+<schema xmlns="urn:ietf:params:xml:ns:yang:ietf-yang-library">http://127.0.0.1:8080/schema/example-jukebox.yang</schema>

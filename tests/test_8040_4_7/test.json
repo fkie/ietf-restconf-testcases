@@ -1,7 +1,7 @@
 {
     "name": "RFC 8040 Section 4.7. example",
     "yangdirs": [ "../../yang-models/rfc8040-jukebox" ],
-    "model": "../../yang-models/rfc8040-jukebox/library.json",
+    "model": "../../yang-models/rfc8040-jukebox/jukebox.json",
     "before": "before.json",
     "query": {
         "operation": "DELETE",
