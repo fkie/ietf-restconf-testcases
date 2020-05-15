@@ -1,0 +1,35 @@
+{
+    "ietf-yang-library:modules-state": {
+        "module-set-id": "20170126",
+        "module": [
+            {
+                "name": "ietf-yang-library",
+                "revision": "2016-06-21",
+                "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-library",
+                "schema": "https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-yang-library%402016-06-21.yang",
+                "conformance-type": "implement"
+            },
+            {
+                "name": "ietf-restconf-monitoring",
+                "revision": "2017-01-26",
+                "namespace": "urn:ietf:params:xml:ns:yang:ietf-restconf-monitoring",
+                "schema": "https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-restconf-monitoring%402017-01-26.yang",
+                "conformance-type": "implement"
+            },
+            {
+                "name": "ietf-inet-types",
+                "revision": "2013-07-15",
+                "namespace": "urn:ietf:params:xml:ns:yang:ietf-inet-types",
+                "schema": "https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-inet-types%402013-07-15.yang",
+                "conformance-type": "import"
+            },
+            {
+                "name": "ietf-yang-types",
+                "revision": "2013-07-15",
+                "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+                "schema": "https://raw.githubusercontent.com/YangModels/yang/master/standard/ietf/RFC/ietf-yang-types%402013-07-15.yang",
+                "conformance-type": "import"
+            }
+        ]
+    }
+}

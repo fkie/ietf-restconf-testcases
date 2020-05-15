@@ -1,0 +1,58 @@
+{
+    "ietf-system:system": {
+        "contact": "LL",
+        "hostname": "foo.bar.baz",
+        "location": "\n      \n    ",
+        "clock": {
+            "timezone-utc-offset": 2
+        },
+        "dns-resolver": {
+            "search": [
+                "ietf.org"
+            ],
+            "server": [
+                {
+                    "name": "odvr",
+                    "udp-and-tcp": {
+                        "address": "1.2.3.4",
+                        "port": 53
+                    }
+                }
+            ],
+            "options": {
+                "timeout": 5,
+                "attempts": 2
+            }
+        },
+        "authentication": {
+            "user-authentication-order": [
+                "ietf-system-tacacsplus:tacacsplus"
+            ]
+        },
+        "ietf-system-tacacsplus:tacacsplus": {
+            "server": [
+                {
+                    "name": "tacacs",
+                    "server-type": "all",
+                    "address": "5.6.7.8",
+                    "port": 49,
+                    "shared-secret": "hgalhgal-jfguzfg",
+                    "source-ip": "9.8.7.6",
+                    "single-connection": false,
+                    "timeout": 5,
+                    "statistics": {
+                        "connection-opens": "1",
+                        "connection-closes": "2",
+                        "connection-aborts": "3",
+                        "connection-failures": "4",
+                        "connection-timeouts": "5",
+                        "messages-sent": "6",
+                        "messages-received": "7",
+                        "errors-received": "8",
+                        "sessions": "9"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Tacacsplus test",
+    "yangdirs": [ "../../yang-models/ietf" ],
+    "model": "../../yang-models/ietf/tacacsplus-library.json",
+    "before": "before.xml",
+    "query": {
+        "operation": "GET",
+        "url": "/data/ietf-system:system",
+        "headers": {
+            "Accept": "application/yang-data+xml"
+        },
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/yang-data+xml"
+        },
+        "body": "result.xml"
+    },
+    "after": "after.json"
+}
