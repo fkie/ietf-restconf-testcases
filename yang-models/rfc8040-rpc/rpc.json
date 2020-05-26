@@ -1,0 +1,25 @@
+{
+  "ietf-yang-library:modules-state": {
+    "module-set-id": "",
+    "module": [
+      {
+        "name": "example-ops",
+        "revision": "2016-07-07",
+        "namespace": "https://example.com/ns/example-ops",
+        "conformance-type": "implement"
+      },
+      {
+        "name": "example-actions",
+        "revision": "2016-07-07",
+        "namespace": "https://example.com/ns/example-actions",
+        "conformance-type": "implement"
+      },
+      {
+        "name": "ietf-yang-types",
+        "revision": "2013-07-15",
+        "namespace": "urn:ietf:params:xml:ns:yang:ietf-yang-types",
+        "conformance-type": "import"
+      }
+    ]
+  }
+}

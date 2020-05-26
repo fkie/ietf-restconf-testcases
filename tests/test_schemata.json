@@ -1,0 +1,125 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "JSON document describing a RESTCONF (RFC 8040) testcase",
+    "type": "object",
+    "required": ["name", "yangdirs", "model", "before", "query", "response", "after"],
+    "properties": {
+        "name": {
+            "description": "Name of the testcase",
+            "type": "string"
+        },
+        "yangdirs": {
+            "description": "Array of directories where the YANG library and schemata are stored",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "model": {
+            "description": "File with the yang library model used for the test",
+            "type": "string"
+        },
+        "before": {
+            "description": "JSON or XML file with the database state before the test",
+            "type": "string"
+        },
+        "query": {
+            "description": "Restconf query from client to server",
+            "type": "object",
+            "required": ["operation", "url", "headers", "body"],
+            "properties": {
+                "operation": {
+                    "description": "HTTP operation of the query",
+                    "type": "string",
+                    "enum": ["OPTIONS", "HEAD", "GET", "PUT", "POST", "DELETE", "PATCH" ]
+                },
+                "url": {
+                    "description": "URL of the query relative to /restconf",
+                    "type": "string"
+                },
+                "headers": {
+                    "descriptions": "Dictionary of HTTP headers to set for the query",
+                    "type": "object",
+                    "additionalProperties": { "type": "string" }
+                },
+                "body": {
+                    "description": "File with HTTP body of the query or NULL for no body",
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            }
+        },
+        "rpc": {
+            "description": "Remote procedure call necessary for query",
+            "type": "object",
+            "required": [ "datapath", "input", "output-status", "output" ],
+            "properties": {
+                "datapath": {
+                    "description": "Schema data-path that the RPC should handle",
+                    "type": "string"
+                },
+                "input": {
+                    "description": "File with expected input of the RPC or NULL for no input",
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                },
+                "output": {
+                    "description": "File with output of the RPC or NULL for no output",
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            }
+        },
+        "response": {
+            "description": "Restconf response from server to client",
+            "type": "object",
+            "required": ["status", "headers", "body"],
+            "properties": {
+                "status": {
+                    "description": "HTTP Return code",
+                    "type": "integer",
+                    "minimum": 100,
+                    "maximum": 999
+                },
+                "headers": {
+                    "descriptions": "Dictionary of HTTP headers to set for the query",
+                    "type": "object",
+                    "additionalProperties": { "type": "string" }
+                },
+                "body": {
+                    "description": "File with HTTP body of the response or NULL for no body",
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            }
+        },
+        "after": {
+            "description": "JSON or XML file with the database state after the test",
+            "type": "string"
+        }
+    }
+}
