@@ -35,6 +35,11 @@ parameters, which has the following structure:
         "body": <path of a XML or JSON file to be send in text
                 as the query body or NULL if no body should be sent>
     },
+    "rpc": {
+        "datapath": "<yang schema datapath the RPC should handle>",
+        "input": <file with expected input of RPC or NULL for no input",
+        "output": <file with expected output of RPC or NULL for no output"
+    }
     "response": {
         "status": <expected numeric status code>,
         "headers": {
@@ -48,3 +53,4 @@ parameters, which has the following structure:
                content afterthe test"
 }
 ```
+You will find a JSON schema file in the test directory.
