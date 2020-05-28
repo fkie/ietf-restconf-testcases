@@ -1,0 +1,25 @@
+{
+    "name": "RFC 8040 Section 3.6.1. json example",
+    "yangdirs": [ "../../yang-models/rfc8040-rpc", "../../yang-models/ietf" ],
+    "model": "../../yang-models/rfc8040-rpc/rpc.json",
+    "before": "state.json",
+    "query": {
+        "operation": "POST",
+        "url": "/operations/example-ops:reboot",
+        "headers": {
+            "Content-Type": "application/yang-data+xml"
+        },
+        "body": "query.xml"
+    },
+    "rpc": {
+        "datapath": "/operations/example-ops:reboot",
+        "input": "rpc_input.json",
+        "output": null
+    },
+    "response": {
+        "status": 204,
+        "headers": {},
+        "body": null
+    },
+    "after": "state.json"
+}

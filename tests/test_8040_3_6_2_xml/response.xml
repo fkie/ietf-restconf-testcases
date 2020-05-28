@@ -1,0 +1,5 @@
+<output xmlns="https://example.com/ns/example-ops">
+    <reboot-time>30</reboot-time>
+    <message>Going down for system maintenance</message>
+    <language>en-US</language>
+</output>

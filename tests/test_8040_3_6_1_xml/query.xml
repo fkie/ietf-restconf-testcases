@@ -1,0 +1,5 @@
+<input xmlns="https://example.com/ns/example-ops">
+    <delay>600</delay>
+    <message>Going down for system maintenance</message>
+    <language>en-US</language>
+</input>
