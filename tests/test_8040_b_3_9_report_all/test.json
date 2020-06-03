@@ -1,0 +1,22 @@
+{
+    "name": "RFC 8040 Section B.3.9. trim json example",
+    "yangdirs": [ "../../yang-models/rfc6243-interfaces" ],
+    "model": "../../yang-models/rfc6243-interfaces/example-interfaces.json",
+    "before": "state.json",
+    "query": {
+        "operation": "GET",
+        "url": "/data/example:interfaces/interface=eth1?with-default=report-all",
+        "headers": {
+            "Accept": "application/yang-data+json"
+        },
+        "body": null
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/yang-data+json"
+        },
+        "body": "result.json"
+    },
+    "after": "state.json"
+}

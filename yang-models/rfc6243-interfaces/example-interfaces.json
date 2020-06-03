@@ -1,0 +1,13 @@
+{
+  "ietf-yang-library:modules-state": {
+    "module-set-id": "",
+    "module": [
+      {
+        "name": "example",
+        "revision": "2016-08-15",
+        "namespace": "https://example.com/ns/interfaces",
+        "conformance-type": "implement"
+      }
+    ]
+  }
+}

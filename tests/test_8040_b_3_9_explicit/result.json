@@ -1,0 +1,7 @@
+{
+    "example:interface" : {
+        "name" : "eth1",
+        "mtu" : 1500,
+        "status" : "up"
+    }
+}

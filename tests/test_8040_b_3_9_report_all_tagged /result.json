@@ -1,0 +1,10 @@
+{
+    "example:interface" : {
+        "name" : "eth0",
+        "mtu" : 8192,
+        "status" : "up",
+        "@status": {
+            "ietf-netconf-with-defaults:default": true
+        }
+    }
+}
